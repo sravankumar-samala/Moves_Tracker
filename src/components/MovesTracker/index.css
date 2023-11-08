@@ -1,1 +1,46 @@
 /* write your css code */
+.main-container {
+  min-height: 100vh;
+  display: flex;
+  /* grid-template-columns: 30ch, 1fr; */
+  gap: 1em;
+  padding: 1em;
+}
+.sidebar-container {
+  background-color: lightblue;
+  padding: 1em;
+  flex-basis: 300px;
+}
+.content-container {
+  background-color: lightpink;
+  flex-grow: 1;
+  padding: 1em;
+  display: grid;
+  grid-template-rows: auto 1fr;
+}
+.move-header {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.move-header div h2,
+.move-header div p {
+  margin-block: 5px;
+}
+.arrow {
+  display: grid;
+  place-items: center;
+}
+.arrow > span {
+  display: grid;
+  place-items: center;
+  aspect-ratio: 1;
+  width: 60px;
+  color: orange;
+  /* padding: .5em; */
+  background-color: white;
+  font-size: 2rem;
+  font-weight: bold;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.205);
+  border-radius: 50%;
+}

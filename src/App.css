@@ -1,5 +1,6 @@
 * {
   box-sizing: border-box;
+  list-style-type: none;
 }
 
 body {
@@ -9,4 +10,17 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+}
+ul {
+  padding-inline: 0;
+}
+a {
+  text-decoration: none;
+}
+.active {
+  color: black;
+}
+.loading-container {
+  display: grid;
+  place-items: center;
 }
