@@ -49,5 +49,3 @@ export default function MovesTracker() {
     </div>
   )
 }
-
-// git password: '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'
